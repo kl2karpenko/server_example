@@ -61,24 +61,4 @@ Create this function to prevent global variables
 		document.querySelector('ul').appendChild(li);
 	}
 
-	addContact.addEventListener('click', function () {
-		var newContact = {
-			name: personName.value,
-			number: number.value
-		};
-
-		createListItem(newContact);
-
-		personName.value = "";
-		number.value = "";
-
-		phoneList.push(newContact);
-
-		var xhr = new XMLHttpRequest();
-		xhr.open('PUT', '/phones', false);
-		xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
-
-		xhr.send(JSON.stringify(newContact));
-	});
-
 })();
