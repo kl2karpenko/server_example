@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Work with graphic</title>
+  <link rel="stylesheet" href="/bootstrap.min.css"/>
+  <style>
+    body {
+      margin: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<h4>Type here name and number to add person to your contact list</h4>
+
+<div class="form-group">
+  <div class="row">
+    <div class="col-xs-6">
+      <label for="personName">Person's name</label>
+      <input type="text" id="personName" class="form-control"/>
+    </div>
+    <div class="col-xs-6">
+      <label for="number">Person's phone number</label>
+      <input type="text" id="number" class="form-control"/>
+    </div>
+  </div>
+  <button class="btn pull-right btn-lg btn-danger" id="addContact" style="margin-top: 10px;">Create</button>
+  <div class="clearfix"></div>
+</div>
+
+<h2>Contact list:</h2>
+<ul class="list-group" id="phoneNumbers">
+
+</ul>
+
+<script src="/xhr.js"></script>
+
+</body>
+</html>
